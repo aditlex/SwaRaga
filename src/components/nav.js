@@ -8,19 +8,23 @@ export default function Nav() {
           <div className="row d-flex">
             <div className="col-md pr-4 d-flex topper align-items-center">
               <div className="icon mr-2 d-flex justify-content-center align-items-center">
-                <span className="icon-phone2" />
+                <span>@</span>
               </div>
-              <span className="text">+ 1235 2355 98</span>
+              <a href="https://www.threads.com/@swaraga.bali" target="_blank" rel="noopener noreferrer">
+              <span className="text">swarga threads</span>
+              </a>
             </div>
             <div className="col-md pr-4 d-flex topper align-items-center">
               <div className="icon mr-2 d-flex justify-content-center align-items-center">
-                <span className="icon-paper-plane" />
+                <span className="icon-instagram" />
               </div>
-              <span className="text">youremail@email.com</span>
+              <a href="https://www.instagram.com/swaraga.bali/" target="_blank" rel="noopener noreferrer">
+              <span className="text" >swaraga.bali</span>
+              </a>
             </div>
-            <div className="col-md-5 pr-4 d-flex topper align-items-center text-lg-right">
+            <div className="col-md-7 pr-4 d-flex topper align-items-center text-lg-right">
               <span className="text">
-                3-5 Business days delivery &amp; Free Returns
+               One for All, ♻️ Proudly Bali Local Brand With Traditional Touch
               </span>
             </div>
           </div>
@@ -33,8 +37,9 @@ export default function Nav() {
     id="ftco-navbar"
   >
     <div className="container">
+
       <a className="navbar-brand" href="/">
-        Minishop
+        <img src="/images/logo.png" alt="Logo" style={{ height: 50 }} className="mt-2" />
       </a>
       <button
         className="navbar-toggler"
