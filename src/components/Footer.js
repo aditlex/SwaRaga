@@ -28,9 +28,9 @@ export default function Footer() {
             style={{ backgroundImage: "url(/images/gallery-1.jpg)" }}
           >
             <div className="icon mb-4 d-flex align-items-center justify-content-center">
-              <a href="https://www.instagram.com/p/CryGkkFyMKL/?utm_source=ig_web_copy_link&igsh=Nmt5NGlkdnQwYWRo" target="_blank" rel="noopener noreferrer">
+         
               <span className="icon-instagram" />
-              </a>
+             
             </div>
           </a>
         </div>
@@ -41,9 +41,9 @@ export default function Footer() {
             style={{ backgroundImage: "url(/images/gallery-2.jpg)" }}
           >
             <div className="icon mb-4 d-flex align-items-center justify-content-center">
-              <a href="https://www.instagram.com/p/C4BJ8qtSzrX/?utm_source=ig_web_copy_link&igsh=MXZqZTluY2tzMGVwdw==" target="_blank" rel="noopener noreferrer" className="z-10">
+             
               <span className="icon-instagram" />
-              </a>
+          
             </div>
           </a>
         </div>
