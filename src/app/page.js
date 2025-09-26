@@ -1,4 +1,3 @@
-// app/page.js
 import fs from "fs";
 import path from "path";
 import Nav from "@/components/nav";
@@ -6,7 +5,6 @@ import Footer from "@/components/Footer";
 import ProductCard from "@/components/ProductCard";
 
 export default async function Home() {
-  // baca data products.json di server
   const filePath = path.join(process.cwd(), "data", "products.json");
   const raw = fs.existsSync(filePath) ? fs.readFileSync(filePath, "utf8") : "[]";
   const products = JSON.parse(raw || "[]");
@@ -101,7 +99,6 @@ DM Us for more info and order
         </div>
       </section>
 
-      {/* Services */}
       <section className="ftco-section ftco-no-pt ftco-no-pb">
         <div className="container">
           <div className="row no-gutters ftco-services">
@@ -151,7 +148,6 @@ DM Us for more info and order
         </div>
       </section>
 
-      {/* Product listing (mapped from products.json) */}
       <section className="ftco-section bg-light">
         <div className="container">
           <div className="row justify-content-center mb-3 pb-3">
@@ -175,7 +171,6 @@ DM Us for more info and order
         </div>
       </section>
 
-      {/* the rest of your page sections (choose, deal, testimony) */}
       <section className="ftco-section ftco-choose ftco-no-pb ftco-no-pt">
         <div className="container">
           <div className="row no-gutters">
@@ -272,7 +267,6 @@ DM Us for more info and order
         </div>
       </section>
 
-      {/* deal section, testimony, etc. — copy the rest of your original markup as needed */}
       <section className="ftco-section ftco-deal bg-primary">
         <div className="container">
           <div className="row">
@@ -292,7 +286,7 @@ DM Us for more info and order
               </div>
               <div className="text-deal">
                 <h2>
-                  <a href="#">Nike Free RN 2019 iD</a>
+                  <a href="#">Adventure Poncho Towel</a>
                 </h2>
                 <p className="price">
                   <span className="mr-2 price-dc">$120.00</span>
