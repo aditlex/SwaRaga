@@ -48,7 +48,7 @@ Available Size M, L, XL
 DM Us for more info and order 
                       </p>
                       <p>
-                        <a href="#" className="btn-custom">
+                        <a href="shop/GREENFOREST-SleevePoncho" className="btn-custom">
                           Discover Now
                         </a>
                       </p>
@@ -88,7 +88,7 @@ Adventure Poncho Towel with Traditional Touch
 DM Us for more info and order
                       </p>
                       <p>
-                        <a href="#" className="btn-custom">
+                        <a href="shop/BeautifulAdventurePonchoTowel" className="btn-custom">
                           Discover Now
                         </a>
                       </p>
