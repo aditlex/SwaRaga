@@ -35,7 +35,6 @@ export default function HeroSliderFixedHeight({
   const len = slides.length;
   const timerRef = useRef(null);
 
-  // refs to slide elements so we can measure their heights
   const slidesRef = useRef([]);
   slidesRef.current = [];
 
@@ -45,33 +44,31 @@ export default function HeroSliderFixedHeight({
 
   const [containerHeight, setContainerHeight] = useState(null);
 
-  // measure all slides and set container height to max
   const measureSlides = () => {
     if (!slidesRef.current || slidesRef.current.length === 0) return;
     let max = 0;
     slidesRef.current.forEach((el) => {
       if (!el) return;
-      // measure the slide inner content height (use getBoundingClientRect for consistent pixels)
+
       const rect = el.getBoundingClientRect();
       if (rect.height > max) max = rect.height;
     });
     if (max > 0) setContainerHeight(Math.ceil(max));
   };
 
-  // measure after images load & on resize
+
   useEffect(() => {
-    // measure once after mount (some images may still be loading)
+
     measureSlides();
 
-    // measure on resize
     const onResize = () => {
-      // small timeout to let layout settle
+ 
       window.requestAnimationFrame(() => measureSlides());
     };
     window.addEventListener("resize", onResize);
 
     return () => window.removeEventListener("resize", onResize);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, [slides.length]);
 
   useEffect(() => {
@@ -89,9 +86,7 @@ export default function HeroSliderFixedHeight({
     setCurrent(i);
   }
 
-  // helper: when an image loads, re-measure
   const onImgLoad = () => {
-    // let browser lay out the image then measure
     window.requestAnimationFrame(() => measureSlides());
   };
 
@@ -100,7 +95,7 @@ export default function HeroSliderFixedHeight({
       className="hero-slider-root"
       aria-roledescription="carousel"
       style={{
-        // if containerHeight is known, fix the height; otherwise let CSS min-height apply
+  
         height: containerHeight ? `${containerHeight}px` : undefined,
       }}
     >
