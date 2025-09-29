@@ -39,7 +39,6 @@ export default function Page() {
           <div className="row">
             <div className="col-md-8 col-lg-10 order-md-last">
               <div className="row">
-                {/* render product cards */}
                 {products.map((p) => (
                   <ProductCard key={p.id} product={p} />
                 ))}
@@ -62,13 +61,12 @@ export default function Page() {
               </div>
             </div>
 
-            {/* sidebar (kept as in your template) */}
             <div className="col-md-4 col-lg-2">
               <div className="sidebar">
-                {/* categories & price filters: keep your existing static HTML */}
+       
                 <div className="sidebar-box-2">
                   <h2 className="heading">Categories</h2>
-                  {/* ... you can keep the rest of your sidebar markup unchanged */}
+
                 </div>
                 <div className="sidebar-box-2 mt-3">
                   <h2 className="heading">Price Range</h2>
