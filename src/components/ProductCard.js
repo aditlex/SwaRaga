@@ -5,9 +5,9 @@ export default function ProductCard({ product }) {
   if (!product) return null;
 
   return (
-    <div className="col-sm-12 col-md-12 col-lg-4 ftco-animate d-flex">
+    <div className="col-sm-12 col-md-12 col-lg-4  d-flex">
       <div className="product d-flex flex-column w-100">
-        <a href={`/shop/${product.slug}`} className="img-prod">
+        <Link href={`/shop/${product.slug}`} className="img-prod">
           <img
             className="img-fluid"
             src={product.image}
@@ -16,7 +16,7 @@ export default function ProductCard({ product }) {
           />
           {product.oldPrice && <span className="status">Sale</span>}
           <div className="overlay" />
-        </a>
+        </Link>
 
         <div className="text py-3 pb-4 px-3 d-flex flex-column">
           <div className="d-flex">
@@ -50,11 +50,11 @@ export default function ProductCard({ product }) {
           </div>
 
           <p className="bottom-area d-flex px-3" style={{ marginTop: 8 }}>
-            <a href="#" className="add-to-cart text-center py-2 mr-1">
+            <Link href="#" className="add-to-cart text-center py-2 mr-1">
               <span>
                 Add to cart <i className="ion-ios-add ml-1" />
               </span>
-            </a>
+            </Link>
             <Link href={`/shop/${product.slug}`} className="buy-now text-center py-2">
               <span>
                 View

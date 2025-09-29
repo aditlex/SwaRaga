@@ -13,7 +13,7 @@ export default function Single() {
   >
     <div className="container">
       <div className="row no-gutters slider-text align-items-center justify-content-center">
-        <div className="col-md-9 ftco-animate text-center">
+        <div className="col-md-9  text-center">
           <p className="breadcrumbs">
             <span className="mr-2">
               <a href="index.html">Home</a>
@@ -28,7 +28,7 @@ export default function Single() {
   <section className="ftco-section">
     <div className="container">
       <div className="row">
-        <div className="col-lg-6 mb-5 ftco-animate">
+        <div className="col-lg-6 mb-5 ">
           <a href="images/product-1.png" className="image-popup prod-img-bg">
             <img
               src="images/product-1.png"
@@ -37,7 +37,7 @@ export default function Single() {
             />
           </a>
         </div>
-        <div className="col-lg-6 product-details pl-md-5 ftco-animate">
+        <div className="col-lg-6 product-details pl-md-5 ">
           <h3>Nike Free RN 2019 iD</h3>
           <div className="rating d-flex">
             <p className="text-left mr-4">

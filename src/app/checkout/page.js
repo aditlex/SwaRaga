@@ -11,7 +11,7 @@ export default function Page() {
   >
     <div className="container">
       <div className="row no-gutters slider-text align-items-center justify-content-center">
-        <div className="col-md-9 ftco-animate text-center">
+        <div className="col-md-9  text-center">
           <p className="breadcrumbs">
             <span className="mr-2">
               <a href="index.html">Home</a>
@@ -26,7 +26,7 @@ export default function Page() {
   <section className="ftco-section">
     <div className="container">
       <div className="row justify-content-center">
-        <div className="col-xl-10 ftco-animate">
+        <div className="col-xl-10 ">
           <form action="#" className="billing-form">
             <h3 className="mb-4 billing-heading">Billing Details</h3>
             <div className="row align-items-end">
@@ -228,17 +228,17 @@ export default function Page() {
               Vokalia and Consonantia.
             </p>
             <ul className="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-              <li className="ftco-animate">
+              <li className="">
                 <a href="#">
                   <span className="icon-twitter" />
                 </a>
               </li>
-              <li className="ftco-animate">
+              <li className="">
                 <a href="#">
                   <span className="icon-facebook" />
                 </a>
               </li>
-              <li className="ftco-animate">
+              <li className="">
                 <a href="#">
                   <span className="icon-instagram" />
                 </a>

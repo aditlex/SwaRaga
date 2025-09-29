@@ -1,8 +1,9 @@
+import Link from "next/link";
 export default function Nav() {
   return (
     <>
-      <div className="py-1 bg-black">
-        <div className="container">
+      <div className="py-1 bg-black ">
+        <div className="container ">
           <div className="row no-gutters d-flex align-items-start align-items-center px-md-0">
             <div className="col-lg-12 d-block">
               <div className="row d-flex">
@@ -10,25 +11,25 @@ export default function Nav() {
                   <div className="icon mr-2 d-flex justify-content-center align-items-center">
                     <span>@</span>
                   </div>
-                  <a
+                  <Link
                     href="https://www.threads.com/@swaraga.bali"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <span className="text">swarga threads</span>
-                  </a>
+                  </Link>
                 </div>
                 <div className="col-md pr-4 d-flex topper align-items-center">
                   <div className="icon mr-2 d-flex justify-content-center align-items-center">
                     <span className="icon-instagram" />
                   </div>
-                  <a
+                  <Link
                     href="https://www.instagram.com/swaraga.bali/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <span className="text">swaraga.bali</span>
-                  </a>
+                  </Link>
                 </div>
                 <div className="col-md-7 pr-4 d-flex topper align-items-center text-lg-right">
                   <span className="text">
@@ -47,18 +48,18 @@ export default function Nav() {
         id="ftco-navbar"
         style={{
           backdropFilter: "blur(2px)", 
-           height: "60px",      
+           height: "60px",     
         }}
       >
         <div className="container">
-          <a className="navbar-brand" href="/">
+          <Link className="navbar-brand" href="/">
             <img
               src="/images/logo.png"
               alt="Logo"
-              style={{ height: 50 }}
-              className="mt-2"
+              style={{ height: 40 }}
+              className="mt-"
             />
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -73,12 +74,12 @@ export default function Nav() {
           <div className="collapse navbar-collapse" id="ftco-nav">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item active">
-                <a href="/" className="nav-link">
+                <Link href="/" className="nav-link">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item dropdown">
-                <a
+                <Link
                   className="nav-link dropdown-toggle"
                   href="#"
                   id="dropdown04"
@@ -87,41 +88,41 @@ export default function Nav() {
                   aria-expanded="false"
                 >
                   Catalog
-                </a>
+                </Link>
                 <div className="dropdown-menu" aria-labelledby="dropdown04">
-                  <a className="dropdown-item" href="/shop">
+                  <Link className="dropdown-item" href="/shop">
                     Shop
-                  </a>
-                  <a className="dropdown-item" href="/detailproduct">
+                  </Link>
+                  <Link className="dropdown-item" href="/detailproduct">
                     Single Product
-                  </a>
-                  <a className="dropdown-item" href="/cart">
+                  </Link>
+                  <Link className="dropdown-item" href="/cart">
                     Cart
-                  </a>
-                  <a className="dropdown-item" href="/checkout">
+                  </Link>
+                  <Link className="dropdown-item" href="/checkout">
                     Checkout
-                  </a>
+                  </Link>
                 </div>
               </li>
               <li className="nav-item">
-                <a href="/about" className="nav-link">
+                <Link href="/about" className="nav-link">
                   About
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a href="/blog" className="nav-link">
+                <Link href="/blog" className="nav-link">
                   Blog
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a href="/contact" className="nav-link">
+                <Link href="/contact" className="nav-link">
                   Contact
-                </a>
+                </Link>
               </li>
               <li className="nav-item cta cta-colored">
-                <a href="/cart" className="nav-link">
+                <Link href="/cart" className="nav-link">
                   <span className="icon-shopping_cart" /> [0]
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

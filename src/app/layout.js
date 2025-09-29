@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css" />
+  <link rel="stylesheet" href="/css/open-iconic-bootstrap.min.css" />
   <link rel="stylesheet" href="/css/animate.css" />
   <link rel="stylesheet" href="/css/owl.carousel.min.css" />
   <link rel="stylesheet" href="/css/owl.theme.default.min.css" />

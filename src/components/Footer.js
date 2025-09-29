@@ -4,7 +4,7 @@ export default function Footer() {
          <section className="ftco-gallery">
     <div className="container">
       <div className="row justify-content-center">
-        <div className="col-md-8 heading-section text-center mb-4 ftco-animate">
+        <div className="col-md-8 heading-section text-center mb-4 ">
           <h2 className="mb-2">Follow Us On Instagram</h2>
           
           <a href="https://www.instagram.com/swaraga.bali/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }} className="">
@@ -21,7 +21,7 @@ export default function Footer() {
     </div>
     <div className="container-fluid px-0">
       <div className="row no-gutters">
-        <div className="col-md-4 col-lg-2 ftco-animate">
+        <div className="col-md-4 col-lg-2 ">
           <a
             href="images/gallery-1.jpg"
             className="gallery image-popup img d-flex align-items-center"
@@ -34,7 +34,7 @@ export default function Footer() {
             </div>
           </a>
         </div>
-        <div className="col-md-4 col-lg-2 ftco-animate">
+        <div className="col-md-4 col-lg-2 ">
           <a
             href="images/gallery-2.jpg"
             className="gallery image-popup img d-flex align-items-center"
@@ -47,7 +47,7 @@ export default function Footer() {
             </div>
           </a>
         </div>
-        <div className="col-md-4 col-lg-2 ftco-animate">
+        <div className="col-md-4 col-lg-2 ">
           <a
             href="images/gallery-3.jpg"
             className="gallery image-popup img d-flex align-items-center"
@@ -58,7 +58,7 @@ export default function Footer() {
             </div>
           </a>
         </div>
-        <div className="col-md-4 col-lg-2 ftco-animate">
+        <div className="col-md-4 col-lg-2 ">
           <a
             href="images/gallery-4.jpg"
             className="gallery image-popup img d-flex align-items-center"
@@ -69,7 +69,7 @@ export default function Footer() {
             </div>
           </a>
         </div>
-        <div className="col-md-4 col-lg-2 ftco-animate">
+        <div className="col-md-4 col-lg-2 ">
           <a
             href="images/gallery-5.jpg"
             className="gallery image-popup img d-flex align-items-center"
@@ -80,7 +80,7 @@ export default function Footer() {
             </div>
           </a>
         </div>
-        <div className="col-md-4 col-lg-2 ftco-animate">
+        <div className="col-md-4 col-lg-2 ">
           <a
             href="images/gallery-6.jpg"
             className="gallery image-popup img d-flex align-items-center"
@@ -114,17 +114,17 @@ export default function Footer() {
               Vokalia and Consonantia.
             </p>
             <ul className="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-              <li className="ftco-animate">
+              <li className="">
                 <a href="#">
                   <span className="icon-twitter" />
                 </a>
               </li>
-              <li className="ftco-animate">
+              <li className="">
                 <a href="#">
                   <span className="icon-facebook" />
                 </a>
               </li>
-              <li className="ftco-animate">
+              <li className="">
                 <a href="#">
                   <span className="icon-instagram" />
                 </a>

@@ -1,11 +1,11 @@
 export default function ProductDetail({ product, imageSrc }) {
   return (
     <div className="row">
-      <div className="col-lg-6 mb-5 ftco-animate">
+      <div className="col-lg-6 mb-5 ">
         <img src={imageSrc} className="img-fluid" alt={product.title} />
       </div>
 
-      <div className="col-lg-6 product-details pl-md-5 ftco-animate">
+      <div className="col-lg-6 product-details pl-md-5 ">
         <h3>{product.title}</h3>
 
         <div className="rating d-flex">

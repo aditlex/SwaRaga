@@ -7,14 +7,15 @@ import ProductDetail from "@/components/ProductDetail";
 import Tabs from "@/components/TabsDetailProduct";
 
 export const dynamic = "force-dynamic";
-export const revalidate = 0; // jangan cache, selalu server-render per request
+export const revalidate = 0;
 
 export default async function ProductPage({ params }) {
-  const slug = params.slug;
+  // IMPORTANT: await params in App Router before using its properties
+  const { slug } = await params;
 
   const filePath = path.join(process.cwd(), "data", "products.json");
-  const json = fs.readFileSync(filePath, "utf8");
-  const products = JSON.parse(json);
+  const json = fs.existsSync(filePath) ? fs.readFileSync(filePath, "utf8") : "[]";
+  const products = JSON.parse(json || "[]");
 
   const product = products.find((p) => p.slug === slug);
 
@@ -38,7 +39,7 @@ export default async function ProductPage({ params }) {
       >
         <div className="container">
           <div className="row no-gutters slider-text align-items-center justify-content-center">
-            <div className="col-md-9 ftco-animate text-center">
+            <div className="col-md-9  text-center">
               <p className="breadcrumbs">
                 <span className="mr-2">
                   <a href="/">Home</a>

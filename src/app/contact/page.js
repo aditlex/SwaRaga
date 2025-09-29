@@ -11,7 +11,7 @@ export default function Contact() {
   >
     <div className="container">
       <div className="row no-gutters slider-text align-items-center justify-content-center">
-        <div className="col-md-9 ftco-animate text-center">
+        <div className="col-md-9  text-center">
           <p className="breadcrumbs">
             <span className="mr-2">
               <a href="index.html">Home</a>

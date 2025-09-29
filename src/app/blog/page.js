@@ -1,6 +1,7 @@
 import Nav from "@/components/nav";
 import Footer from "@/components/Footer";
 
+
 export default function Page() {
     return (
         <>
@@ -11,7 +12,7 @@ export default function Page() {
   >
     <div className="container">
       <div className="row no-gutters slider-text align-items-center justify-content-center">
-        <div className="col-md-9 ftco-animate text-center">
+        <div className="col-md-9  text-center">
           <p className="breadcrumbs">
             <span className="mr-2">
               <a href="index.html">Home</a>
@@ -26,9 +27,9 @@ export default function Page() {
   <section className="ftco-section ftco-degree-bg">
     <div className="container">
       <div className="row">
-        <div className="col-lg-8 order-lg-last ftco-animate">
+        <div className="col-lg-8 order-lg-last ">
           <div className="row">
-            <div className="col-md-12 d-flex ftco-animate">
+            <div className="col-md-12 d-flex ">
               <div className="blog-entry align-self-stretch d-md-flex">
                 <a
                   href="blog-single.html"
@@ -71,7 +72,7 @@ export default function Page() {
                 </div>
               </div>
             </div>
-            <div className="col-md-12 d-flex ftco-animate">
+            <div className="col-md-12 d-flex ">
               <div className="blog-entry align-self-stretch d-md-flex">
                 <a
                   href="blog-single.html"
@@ -114,7 +115,7 @@ export default function Page() {
                 </div>
               </div>
             </div>
-            <div className="col-md-12 d-flex ftco-animate">
+            <div className="col-md-12 d-flex ">
               <div className="blog-entry align-self-stretch d-md-flex">
                 <a
                   href="/blogsingle"
@@ -157,7 +158,7 @@ export default function Page() {
                 </div>
               </div>
             </div>
-            <div className="col-md-12 d-flex ftco-animate">
+            <div className="col-md-12 d-flex ">
               <div className="blog-entry align-self-stretch d-md-flex">
                 <a
                   href="/blogsingle"
@@ -200,7 +201,7 @@ export default function Page() {
                 </div>
               </div>
             </div>
-            <div className="col-md-12 d-flex ftco-animate">
+            <div className="col-md-12 d-flex ">
               <div className="blog-entry align-self-stretch d-md-flex">
                 <a
                   href="/blogsingle"
@@ -275,7 +276,7 @@ export default function Page() {
           </div>
         </div>{" "}
         {/* .col-md-8 */}
-        <div className="col-lg-4 sidebar ftco-animate">
+        <div className="col-lg-4 sidebar ">
           <div className="sidebar-box">
             <form action="#" className="search-form">
               <div className="form-group">
@@ -288,7 +289,7 @@ export default function Page() {
               </div>
             </form>
           </div>
-          <div className="sidebar-box ftco-animate">
+          <div className="sidebar-box ">
             <h3 className="heading">Categories</h3>
             <ul className="categories">
               <li>
@@ -323,7 +324,7 @@ export default function Page() {
               </li>
             </ul>
           </div>
-          <div className="sidebar-box ftco-animate">
+          <div className="sidebar-box ">
             <h3 className="heading">Recent Blog</h3>
             <div className="block-21 mb-4 d-flex">
               <a
@@ -419,7 +420,7 @@ export default function Page() {
               </div>
             </div>
           </div>
-          <div className="sidebar-box ftco-animate">
+          <div className="sidebar-box ">
             <h3 className="heading">Tag Cloud</h3>
             <div className="tagcloud">
               <a href="#" className="tag-cloud-link">
@@ -448,7 +449,7 @@ export default function Page() {
               </a>
             </div>
           </div>
-          <div className="sidebar-box ftco-animate">
+          <div className="sidebar-box ">
             <h3 className="heading">Paragraph</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus
