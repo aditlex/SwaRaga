@@ -1,11 +1,6 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 
-/**
- * HeroSlider (fixed height)
- * - Mengukur tinggi semua slide setelah gambar load & pada resize
- * - Menetapkan height container ke max height (px) supaya tidak berubah-ubah saat slide berganti
- */
 export default function HeroSliderFixedHeight({
   slidesData = null,
   autoplay = true,
@@ -79,8 +74,6 @@ export default function HeroSliderFixedHeight({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [slides.length]);
 
-  // Also measure whenever an image inside slides loads (attach onLoad on img)
-  // Autoplay logic (timeout so manual interactions reset it)
   useEffect(() => {
     if (!autoplay || len <= 1) return;
     clearTimeout(timerRef.current);
@@ -170,7 +163,7 @@ export default function HeroSliderFixedHeight({
         </>
       )}
 
-      {/* Styles (kept similar dengan sebelumnya) */}
+      {/* Styles */}
       <style jsx>{`
         .hero-slider-root {
           position: relative;
@@ -272,7 +265,6 @@ export default function HeroSliderFixedHeight({
         .hero-image {
           width: 110%;
           max-width: 720px;
-          transform: rotate(-18deg) translateX(6%);
           object-fit: contain;
           filter: drop-shadow(0 18px 30px rgba(0, 0, 0, 0.25));
           user-select: none;
